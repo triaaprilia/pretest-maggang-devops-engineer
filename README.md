@@ -1,6 +1,6 @@
 # Pre-Test Bootcamp DevOps
 
-## Knowlage based
+## knowledge base
 
 1. Apa yang anda ketahui tentang DevOps?
 2. Apa yang anda ketahui tentang Infrastructure?
