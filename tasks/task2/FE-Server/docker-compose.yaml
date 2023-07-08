@@ -1,0 +1,26 @@
+services:
+	fe_container:
+		command:
+		- POSTGRES_PASSWORD=fe_pass
+		- "\\\r\n-e"
+		- POSTGRES_USER=fe_user
+		- "\\\r\n-v"
+		- NGINX_ROOT_DOCUMENT=/var/www/html
+		- "\\\r\n-p"
+		- 80:80
+		- "\\\r\n--name"
+		- fe_container
+		- dimmaryanto93/udemy-angular-app:latest
+		
+		container_name: fe_container
+		
+		environment:
+			POSTGRES_USER: fe_user
+			POSTGRES_PASSWORD: fe_pass
+		
+		image: "\\\r\n-e"
+		ports:
+			- 80:80
+		volumes:
+			-NGINX_ROOT_DOCUMENT=/var/www/html
+version: '3'

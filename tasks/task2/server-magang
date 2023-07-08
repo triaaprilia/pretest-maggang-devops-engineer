@@ -1,0 +1,14 @@
+docker run -d \
+-e POSTGRES_PASSWORD=be_pass \
+-e POSTGRES_USER=be_user \
+-p 8080:8080 -p 5432:5432 \
+--name be_container dimmaryanto93/udemy-springboot-app:latest
+
+
+docker run -d \
+-e POSTGRES_PASSWORD=fe_pass \
+-e POSTGRES_USER=fe_user \
+-v NGINX_ROOT_DOCUMENT=/var/www/html \
+-p 80:80 \
+--name fe_container dimmaryanto93/udemy-angular-app:latest
+

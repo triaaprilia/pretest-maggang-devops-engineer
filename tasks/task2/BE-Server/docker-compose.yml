@@ -1,0 +1,18 @@
+services:
+	be_container:
+		command:
+		- be_container
+		- dimmaryanto93/udemy-springboot-app:latest
+		
+		container_name: be_container
+		
+		environment:
+			POSTGRES_USER: fe_user
+			POSTGRES_PASSWORD: fe_pass
+		
+		image: "\\\r\n--name"
+		ports:
+			- 8080:8080
+			- 5432:5432
+	
+version: '3'
